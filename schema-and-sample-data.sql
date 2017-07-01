@@ -43,7 +43,7 @@ insert into oauth_client_details
 values(
     'rs1', 'oauth2-resource', 'read, trust', 'authorization_code,refresh_token',
     'http://127.0.0.1?key=rs1', 'ROLE_CLIENT', '', null,
-    null, '', 'read,trust'
+    null, '{}', 'read,trust'
 );
 /** 用户 用户名 admin, 密码admpwd */
 insert into users(username, name, password) values('admin', 'System Administrator', 'admpwd');
