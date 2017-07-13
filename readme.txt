@@ -14,7 +14,8 @@ http://localhost:8081/oauthserver/oauth/authorize?response_type=code&client_id=r
 
 2.2
 ### --- code for accesstoken ------
-#curl rs1:@localhost:8081/oauthserver/oauth/token  -d grant_type=authorization_code -d client_id=rs1  -d redirect_uri=http://127.0.0.1%3Fkey%3Drs1 -d code=GlO7wT
+#curl rs1:xxx@localhost:8081/oauthserver/oauth/token  -d grant_type=authorization_code -d client_id=rs1  -d client_secret=xxx -d redirect_uri=http://127.0.0.1%3Fkey%3Drs1 -d code=GlO7wT
+
 ##---return value ---
 {
     "access_token":"f3885d37-ece0-481e-88b3-f00c27ed8a34",
