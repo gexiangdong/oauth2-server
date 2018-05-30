@@ -1,2 +1,3 @@
-# oauth2-server
-OAuth2 Server (spring-boot)
+# Open Auth 2.0 Server
+
+

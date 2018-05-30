@@ -1,0 +1,22 @@
+server:
+  port: 8008
+  contextPath: /authserver
+
+
+spring:
+  application:
+    name: auth-server # 服务名称
+  datasource:
+    dbcp2.validation-query: select 1 
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://127.0.0.1:5432/oauth2server?stringtype=unspecified
+    name: oauth2server
+    username: pgdbo
+    password: sql
+
+
+mybatis.configuration:
+  map-underscore-to-camel-case: true
+  default-fetch-size: 100
+  default-statement-timeout: 30
+
