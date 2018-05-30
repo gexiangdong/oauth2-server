@@ -10,10 +10,10 @@ Spring oauth2 server示例。
 ### 测试
 本例中数据库内有2个oauth_client, rs1和rs2
 
-|| oauth_client || password || grant_type ||
-|| ---- || ---- || ---- ||
-|| rs1 || 无 || password ||
-|| rs2 || secret || authorization_code ||
+| oauth_client | password | grant_type |
+|:----:|:----:|:----:|
+| rs1 | 无 | password |
+| rs2 | secret | authorization_code |
 
 #### password类型
 
