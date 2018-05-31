@@ -7,7 +7,8 @@ Description=oauth2-server
 After=syslog.target  
   
 [Service]  
-ExecStart=/usr/bin/java -jar -Xms256m -Xmx1G  -Dlog.level.console=warn -Dlog.level.ysb=info /web/webapps/open-auth-server-jwt-1.0.jar --spring.profiles.active=production 
+ExecStart=/usr/bin/java -jar -Xms256m -Xmx1G -Dserver.port=8087 -Dautostart=true -Dlog.level.console=WARN /web/webapps/open-auth-server-jwt-1.0.jar --spring.profiles.active=production 
+
 SuccessExitStatus=143  
   
 [Install]  
